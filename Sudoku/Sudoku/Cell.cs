@@ -1,31 +1,42 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Sudoku
+﻿namespace Sudoku
 {
     public abstract class Cell
     {
-        protected int x;
-        protected int y;
+
+        protected int row;
+        protected int column;
         protected int value;
 
-        public int GetX()
+        public int Row
         {
-            return x;
+            get { return row; }
+            set { row = value; }
         }
-        
-        public int GetY()
+
+        public int Column
         {
-            return y;
+            get { return column; }
+            set { column = value; }
         }
-        
-        public int GetValue()
+
+        public abstract int Value
         {
-            return value;
+            get; set;
         }
-        
+
+        public Cell(int row, int column, int value)
+        {
+            this.row = row;
+            this.column = column;
+            this.value = value;
+        }
+
+        public Cell(int row, int column)
+        {
+            this.row = row;
+            this.column = column;
+            this.value = 0;
+        }
+
     }
 }

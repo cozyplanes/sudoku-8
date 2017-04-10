@@ -1,18 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Sudoku
 {
-    class ImmutableCell : Cell
+    public class ImmutableCell : Cell
     {
-        ImmutableCell(int x, int y, int value)
+        public ImmutableCell(int row, int column, int value) : base(row, column, value) { }
+
+        public override int Value
         {
-            this.x = x;
-            this.y = y;
-            this.value = value;
+            get { return value; }
+            set { throw new Exception("This cell can't be modified"); }
         }
     }
 }

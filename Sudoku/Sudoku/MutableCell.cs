@@ -8,26 +8,13 @@ namespace Sudoku
 {
     class MutableCell : Cell
     {
-        MutableCell(int x, int y, int value)
+        public override int Value
         {
-            this.x = x;
-            this.y = y;
-            this.value = value;
+            get { return value; }
+            set { this.value = value; }
         }
 
-        public void SetX(int x)
-        {
-            this.x = x;
-        }
-
-        public void SetY(int y)
-        {
-            this.y = y;
-        }
-        public void SetValue(int value)
-        {
-            this.value = value;
-        }
+        public MutableCell(int row, int column, int value) : base(row, column, value) { }
 
     }
 }
