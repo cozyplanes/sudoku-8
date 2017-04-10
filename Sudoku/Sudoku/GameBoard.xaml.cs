@@ -17,6 +17,7 @@ namespace Sudoku
 {
     public partial class GameBoard : Page
     {
+
         private Board board;
 
         public GameBoard()
@@ -33,6 +34,7 @@ namespace Sudoku
                     if (cell.Value != 0)
                     {
                         ComboBox comboBox = (ComboBox) LogicalTreeHelper.FindLogicalNode(GameGrid, String.Format("c{0}{1}", i, j));
+                        comboBox.Foreground = Brushes.Green;
                         comboBox.SelectedItem = comboBox.Items.GetItemAt(cell.Value - 1);
                     }
                 }
@@ -54,7 +56,7 @@ namespace Sudoku
             catch (ArgumentException ae)
             {
                 Console.Out.WriteLine(ae.Message);
-                comboBox.SelectedItem = comboBox.Items.GetItemAt(board[row][column].Value - 1);
+                comboBox.SelectedValue = (board[row][column].Value - 1).ToString();
             }
             catch (Exception ex)
             {
