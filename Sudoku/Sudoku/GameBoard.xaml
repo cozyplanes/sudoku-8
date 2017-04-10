@@ -31,7 +31,16 @@
             <ColumnDefinition Width="50" />
             <ColumnDefinition Width="50" />
             <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="100" />
         </Grid.ColumnDefinitions>
+        <Popup Grid.Column="9" Grid.Row="3" PopupAnimation="Fade" AllowsTransparency="False">
+            <StackPanel>
+                <TextBlock Name="McTextBlock" Background="Black" Foreground="White" >
+                    Congratulations, you win!
+                </TextBlock>
+                <Button Content="OK" Click="Button_Click_1"/>
+            </StackPanel>
+        </Popup>
         <ComboBox Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="5,5,2,2" Name="c00">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice001">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice002">2</ComboBoxItem>

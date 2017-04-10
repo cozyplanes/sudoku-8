@@ -22,7 +22,7 @@ namespace Sudoku
             InitializeComponent();
         }
 
-        private void newgame_Click(object sender, RoutedEventArgs e)
+        private void play_Click(object sender, RoutedEventArgs e)
         {
             Uri uri = new Uri("GameBoard.xaml", UriKind.Relative);
             this.NavigationService.Navigate(uri);

@@ -4,19 +4,25 @@
     Title="Sudoku" Height="450" Width="450"
 >
     <Grid>
-        <Button Content="New Game"
+        <Button Content="Play"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                Margin="100,100,100,150"
-                Name="newgame"
-                Click="newgame_Click"
+                Margin="150,150,150,200"
+                Name="play"
+                Click="play_Click"
+                Height="50"
+                Width="80"
+                FontSize="20"
                 />
         <Button Content="Quit"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                Margin="100,100,100,50"
+                Margin="180,180,180,100"
                 Name="quit"
                 Click="quit_Click"
+                Height="50"
+                Width="80"
+                FontSize="20"
         />
     </Grid>
 

@@ -9,7 +9,7 @@ namespace Sudoku
         public override int Value
         {
             get { return value; }
-            set { throw new Exception("This cell can't be modified"); }
+            set { throw new ArgumentException("This cell can't be modified"); }
         }
     }
 }

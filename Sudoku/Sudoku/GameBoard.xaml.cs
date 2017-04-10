@@ -51,11 +51,26 @@ namespace Sudoku
                 board.setValue(row, column, value);
                 comboBox.Foreground = Brushes.Black;
             }
+            catch (ArgumentException ae)
+            {
+                Console.Out.WriteLine(ae.Message);
+                comboBox.SelectedItem = comboBox.Items.GetItemAt(board[row][column].Value - 1);
+            }
             catch (Exception ex)
             {
                 Console.Out.WriteLine(ex.Message);
                 comboBox.Foreground = Brushes.Red;
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -66,7 +66,7 @@ namespace Sudoku
                         i++;
                     }
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     unallowedCells.Add(cell);
                     continue;
