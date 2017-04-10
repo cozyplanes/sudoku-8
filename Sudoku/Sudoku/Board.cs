@@ -8,5 +8,6 @@ namespace Sudoku
 {
     class Board
     {
+        Cell [,] grid = new Cell[9,9];
     }
 }

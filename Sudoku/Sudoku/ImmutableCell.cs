@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Sudoku
 {
-    class ImmutableCell
+    class ImmutableCell : Cell
     {
+        ImmutableCell(int x, int y, int value)
+        {
+            this.x = x;
+            this.y = y;
+            this.value = value;
+        }
     }
 }
