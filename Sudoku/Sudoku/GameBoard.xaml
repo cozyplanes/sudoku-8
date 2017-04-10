@@ -32,7 +32,7 @@
             <ColumnDefinition Width="50" />
             <ColumnDefinition Width="50" />
         </Grid.ColumnDefinitions>
-        <ComboBox Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="2,3,4,5" Name="c00">
+        <ComboBox Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="5,5,2,2" Name="c00">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice001">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice002">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice003">3</ComboBoxItem>
@@ -43,7 +43,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice008">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice009">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="0" Grid.Column="1" BorderBrush="Black" BorderThickness="2" Name="c01">
+        <ComboBox Grid.Row="0" Grid.Column="1" BorderBrush="Black" BorderThickness="2,5,2,2" Name="c01">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice011">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice012">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice013">3</ComboBoxItem>
@@ -54,7 +54,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice018">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice019">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="0" Grid.Column="2" BorderBrush="Black" BorderThickness="2" Name="c02">
+        <ComboBox Grid.Row="0" Grid.Column="2" BorderBrush="Black" BorderThickness="2,5,5,2" Name="c02">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice021">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice022">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice023">3</ComboBoxItem>
@@ -65,7 +65,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice028">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice029">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="0" Grid.Column="3" BorderBrush="Black" BorderThickness="2" Name="c03">
+        <ComboBox Grid.Row="0" Grid.Column="3" BorderBrush="Black" BorderThickness="2,5,2,2" Name="c03">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice031">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice032">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice033">3</ComboBoxItem>
@@ -76,7 +76,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice038">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice039">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="0" Grid.Column="4" BorderBrush="Black" BorderThickness="2" Name="c04">
+        <ComboBox Grid.Row="0" Grid.Column="4" BorderBrush="Black" BorderThickness="2,5,2,2" Name="c04">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice041">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice042">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice043">3</ComboBoxItem>
@@ -87,7 +87,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice048">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice049">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="0" Grid.Column="5" BorderBrush="Black" BorderThickness="2" Name="c05">
+        <ComboBox Grid.Row="0" Grid.Column="5" BorderBrush="Black" BorderThickness="2,5,5,2" Name="c05">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice051">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice052">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice053">3</ComboBoxItem>
@@ -98,7 +98,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice058">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice059">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="0" Grid.Column="6" BorderBrush="Black" BorderThickness="2" Name="c06">
+        <ComboBox Grid.Row="0" Grid.Column="6" BorderBrush="Black" BorderThickness="2,5,2,2" Name="c06">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice061">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice062">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice063">3</ComboBoxItem>
@@ -109,7 +109,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice068">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice069">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="0" Grid.Column="7" BorderBrush="Black" BorderThickness="2" Name="c07">
+        <ComboBox Grid.Row="0" Grid.Column="7" BorderBrush="Black" BorderThickness="2,5,2,2" Name="c07">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice071">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice072">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice073">3</ComboBoxItem>
@@ -120,7 +120,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice078">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice079">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="0" Grid.Column="8" BorderBrush="Black" BorderThickness="2" Name="c08">
+        <ComboBox Grid.Row="0" Grid.Column="8" BorderBrush="Black" BorderThickness="2,5,5,2" Name="c08">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice081">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice082">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice083">3</ComboBoxItem>
@@ -131,7 +131,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice088">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice089">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="1" Grid.Column="0" BorderBrush="Black" BorderThickness="2" Name="c10">
+        <ComboBox Grid.Row="1" Grid.Column="0" BorderBrush="Black" BorderThickness="5,2,2,2" Name="c10">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice101">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice102">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice103">3</ComboBoxItem>
@@ -142,7 +142,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice108">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice109">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="1" Grid.Column="1" BorderBrush="Black" BorderThickness="2" Name="c11">
+        <ComboBox Grid.Row="1" Grid.Column="1" BorderBrush="Black" BorderThickness="2,2,2,2" Name="c11">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice111">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice112">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice113">3</ComboBoxItem>
@@ -153,7 +153,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice118">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice119">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="1" Grid.Column="2" BorderBrush="Black" BorderThickness="2" Name="c12">
+        <ComboBox Grid.Row="1" Grid.Column="2" BorderBrush="Black" BorderThickness="2,2,5,2" Name="c12">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice121">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice122">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice123">3</ComboBoxItem>
@@ -164,7 +164,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice128">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice129">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="1" Grid.Column="3" BorderBrush="Black" BorderThickness="2" Name="c13">
+        <ComboBox Grid.Row="1" Grid.Column="3" BorderBrush="Black" BorderThickness="2,2,2,2" Name="c13">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice131">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice132">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice133">3</ComboBoxItem>
@@ -175,7 +175,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice138">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice139">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="1" Grid.Column="4" BorderBrush="Black" BorderThickness="2" Name="c14">
+        <ComboBox Grid.Row="1" Grid.Column="4" BorderBrush="Black" BorderThickness="2,2,2,2" Name="c14">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice141">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice142">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice143">3</ComboBoxItem>
@@ -186,7 +186,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice148">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice149">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="1" Grid.Column="5" BorderBrush="Black" BorderThickness="2" Name="c15">
+        <ComboBox Grid.Row="1" Grid.Column="5" BorderBrush="Black" BorderThickness="2,2,5,2" Name="c15">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice151">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice152">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice153">3</ComboBoxItem>
@@ -197,7 +197,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice158">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice159">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="1" Grid.Column="6" BorderBrush="Black" BorderThickness="2" Name="c16">
+        <ComboBox Grid.Row="1" Grid.Column="6" BorderBrush="Black" BorderThickness="2,2,2,2" Name="c16">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice161">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice162">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice163">3</ComboBoxItem>
@@ -208,7 +208,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice168">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice169">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="1" Grid.Column="7" BorderBrush="Black" BorderThickness="2" Name="c17">
+        <ComboBox Grid.Row="1" Grid.Column="7" BorderBrush="Black" BorderThickness="2,2,2,2" Name="c17">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice171">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice172">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice173">3</ComboBoxItem>
@@ -219,7 +219,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice178">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice179">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="1" Grid.Column="8" BorderBrush="Black" BorderThickness="2" Name="c18">
+        <ComboBox Grid.Row="1" Grid.Column="8" BorderBrush="Black" BorderThickness="2,2,5,2" Name="c18">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice181">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice182">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice183">3</ComboBoxItem>
@@ -230,7 +230,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice188">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice189">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="2" Grid.Column="0" BorderBrush="Black" BorderThickness="2" Name="c20">
+        <ComboBox Grid.Row="2" Grid.Column="0" BorderBrush="Black" BorderThickness="5,2,2,5" Name="c20">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice201">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice202">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice203">3</ComboBoxItem>
@@ -241,7 +241,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice208">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice209">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="2" Grid.Column="1" BorderBrush="Black" BorderThickness="2" Name="c21">
+        <ComboBox Grid.Row="2" Grid.Column="1" BorderBrush="Black" BorderThickness="2,2,2,5" Name="c21">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice211">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice212">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice213">3</ComboBoxItem>
@@ -252,7 +252,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice218">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice219">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="2" Grid.Column="2" BorderBrush="Black" BorderThickness="2" Name="c22">
+        <ComboBox Grid.Row="2" Grid.Column="2" BorderBrush="Black" BorderThickness="2,2,2,5" Name="c22">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice221">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice222">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice223">3</ComboBoxItem>
@@ -263,7 +263,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice228">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice229">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="2" Grid.Column="3" BorderBrush="Black" BorderThickness="2" Name="c23">
+        <ComboBox Grid.Row="2" Grid.Column="3" BorderBrush="Black" BorderThickness="2,5,2,5" Name="c23">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice231">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice232">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice233">3</ComboBoxItem>
@@ -274,7 +274,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice238">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice239">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="2" Grid.Column="4" BorderBrush="Black" BorderThickness="2" Name="c24">
+        <ComboBox Grid.Row="2" Grid.Column="4" BorderBrush="Black" BorderThickness="2,2,2,5" Name="c24">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice241">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice242">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice243">3</ComboBoxItem>
@@ -285,7 +285,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice248">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice249">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="2" Grid.Column="5" BorderBrush="Black" BorderThickness="2" Name="c25">
+        <ComboBox Grid.Row="2" Grid.Column="5" BorderBrush="Black" BorderThickness="2,5,2,5" Name="c25">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice251">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice252">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice253">3</ComboBoxItem>
@@ -296,7 +296,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice258">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice259">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="2" Grid.Column="6" BorderBrush="Black" BorderThickness="2" Name="c26">
+        <ComboBox Grid.Row="2" Grid.Column="6" BorderBrush="Black" BorderThickness="2,2,2,5" Name="c26">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice261">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice262">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice263">3</ComboBoxItem>
@@ -307,7 +307,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice268">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice269">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="2" Grid.Column="7" BorderBrush="Black" BorderThickness="2" Name="c27">
+        <ComboBox Grid.Row="2" Grid.Column="7" BorderBrush="Black" BorderThickness="2,2,2,5" Name="c27">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice271">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice272">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice273">3</ComboBoxItem>
@@ -318,7 +318,7 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice278">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice279">9</ComboBoxItem>
         </ComboBox>
-        <ComboBox Grid.Row="2" Grid.Column="8" BorderBrush="Black" BorderThickness="2" Name="c28">
+        <ComboBox Grid.Row="2" Grid.Column="8" BorderBrush="Black" BorderThickness="2,5,2,5" Name="c28">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice281">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice282">2</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice283">3</ComboBoxItem>
