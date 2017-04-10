@@ -12,6 +12,12 @@ namespace Sudoku
             setInitialCells();
         }
 
+        public List<Cell> this[int index]
+        {
+            get { return cells[index]; }
+        }
+
+
         private void initializeBoard()
         {
             for (int i = 0; i < 9; i++)
@@ -71,10 +77,24 @@ namespace Sudoku
             Console.WriteLine(unallowedCells.Count);
         }
 
-        private void checkRandomCell(List<Cell> unallowedCells,Cell cell)
+        public List<List<Cell>> Cells
         {
-            
-           
+            get { return cells; }
+        }
+
+        public bool ifFilled()
+        {
+            foreach (List<Cell> row in cells)
+            {
+                foreach (Cell cell in row)
+                {
+                    if (cell.Value == 0)
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
         }
 
         private bool checkAmount(int row, int column)
@@ -95,7 +115,7 @@ namespace Sudoku
                     amount++;
                 }
             }
-            return amount < 5;
+            return amount < 6;
 
         }
 
@@ -109,7 +129,7 @@ namespace Sudoku
                     amount++;
                 }
             }
-            return amount < 5;
+            return amount < 6;
         }
 
         private bool checkSquareAmount(int row, int column)
@@ -127,7 +147,7 @@ namespace Sudoku
                     }
                 }
             }
-            return i < 5;
+            return i < 6;
         } 
  
         public void setValue(int row, int column, int value)
