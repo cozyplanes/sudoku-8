@@ -15,14 +15,22 @@ using System.Windows.Shapes;
 
 namespace Sudoku
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : Page
     {
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void newgame_Click(object sender, RoutedEventArgs e)
+        {
+            Uri uri = new Uri("GameBoard.xaml", UriKind.Relative);
+            this.NavigationService.Navigate(uri);
+        }
+
+        private void quit_Click(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

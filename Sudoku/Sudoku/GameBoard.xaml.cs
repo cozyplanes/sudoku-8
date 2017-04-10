@@ -15,12 +15,11 @@ using System.Windows.Shapes;
 
 namespace Sudoku
 {
-    /// <summary>
-    /// Логика взаимодействия для Board.xaml
-    /// </summary>
-    public partial class Board : Page
+    public partial class GameBoard : Page
     {
-        public Board()
+        private Board board = new Board();
+
+        public GameBoard()
         {
             InitializeComponent();
         }
@@ -28,6 +27,11 @@ namespace Sudoku
         private void RowDefinition_Error(object sender, ValidationErrorEventArgs e)
         {
 
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            return;
         }
     }
 }
