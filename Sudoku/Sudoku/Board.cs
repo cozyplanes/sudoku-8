@@ -11,6 +11,7 @@ namespace Sudoku
         {
             checkInput(row);
             checkInput(column);
+            checkValue(row, column, value);
             cells[row][column].Value = value;
         }
 

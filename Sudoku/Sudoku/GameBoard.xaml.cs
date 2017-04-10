@@ -24,14 +24,20 @@ namespace Sudoku
             InitializeComponent();
         }
 
-        private void RowDefinition_Error(object sender, ValidationErrorEventArgs e)
+        private void choice_PreviewMouseLeftButtonDown(object sender, MouseEventArgs e)
         {
-
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            return;
+            string senderName = ((ComboBoxItem)sender).Name.Replace("choice", "");
+            int row = Int32.Parse(senderName[0].ToString());
+            int column = Int32.Parse(senderName[1].ToString());
+            int value = Int32.Parse(senderName[2].ToString());
+            try
+            {
+                board.setValue(row, column, value);
+            }
+            catch (Exception ex)
+            {
+                Console.Out.WriteLine(ex.Message);
+            }
         }
     }
 }
