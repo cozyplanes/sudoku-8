@@ -17,10 +17,11 @@ namespace Sudoku
 {
     public partial class GameBoard : Page
     {
-        private Board board = new Board();
+        private Board board;
 
         public GameBoard()
         {
+            board = new Board();
             InitializeComponent();
 
             for(int i = 0; i < 9; i++)
@@ -48,11 +49,12 @@ namespace Sudoku
             try
             {
                 board.setValue(row, column, value);
+                comboBox.Foreground = Brushes.Black;
             }
             catch (Exception ex)
             {
                 Console.Out.WriteLine(ex.Message);
-                comboBox.Text = "";
+                comboBox.Foreground = Brushes.Red;
             }
         }
     }
