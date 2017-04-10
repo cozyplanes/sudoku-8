@@ -27,27 +27,54 @@ namespace Sudoku
 
         private void setInitialCells()
         {
-            for (int i = 0; i < 36; i++)
+            Random rand = new Random();
+            int i = 0;
+            List<Cell> unallowedCells = new List<Cell>();
+            int c = 0;
+            while (i < 36)
             {
-                setRandomCell();
+                c++;
+                bool flag = false;
+                int row = rand.Next(0, 9);
+                int column = rand.Next(0, 9);
+                int value = rand.Next(1, 10);
+                Cell cell = new ImmutableCell(row, column, value);
+                foreach (Cell unallowedCell in unallowedCells)
+                {
+                    if (cell.Equals(unallowedCell))
+                    {
+                        flag = true;
+                        break;
+                    }
+                }
+                if(flag)
+                {
+                    continue;
+                }
+                try
+                {
+                    checkValue(row, column, value);
+                    if (cells[row][column].Value == 0 && checkAmount(row, column))
+                    {
+                        cells[row][column] = cell;
+                        i++;
+                    }
+                }
+                catch (Exception e)
+                {
+                    unallowedCells.Add(cell);
+                    continue;
+                }
+                
             }
+            Console.WriteLine(c);
+            Console.WriteLine(unallowedCells.Count);
         }
 
-        private void setRandomCell()
+        private void checkRandomCell(List<Cell> unallowedCells,Cell cell)
         {
-            Random rand = new Random();
-            int row = rand.Next(0, 9);
-            int column = rand.Next(0, 9);
-            int value = rand.Next(1, 10);
-            if (checkAmount(row, column))
-            {
-                Cell cell = new ImmutableCell(row, column, value);
-                cells[row][column] = cell;
-            }
-            else
-            {
-                setRandomCell();
-            }
+            
+           
         }
 
         private bool checkAmount(int row, int column)

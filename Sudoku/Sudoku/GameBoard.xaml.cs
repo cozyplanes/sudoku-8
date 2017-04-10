@@ -17,10 +17,10 @@ namespace Sudoku
 {
     public partial class GameBoard : Page
     {
-        private Board board = new Board();
 
         public GameBoard()
         {
+            Board board = new Board();
             InitializeComponent();
         }
 
@@ -30,6 +30,7 @@ namespace Sudoku
             int row = Int32.Parse(senderName[0].ToString());
             int column = Int32.Parse(senderName[1].ToString());
             int value = Int32.Parse(senderName[2].ToString());
+            /*
             try
             {
                 board.setValue(row, column, value);
@@ -38,6 +39,7 @@ namespace Sudoku
             {
                 Console.Out.WriteLine(ex.Message);
             }
+             */
         }
     }
 }
