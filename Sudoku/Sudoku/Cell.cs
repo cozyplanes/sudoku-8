@@ -19,6 +19,14 @@
             set { column = value; }
         }
 
+        public override bool Equals(object obj)
+        {
+            if (obj.GetType() != this.GetType())
+                return false;
+            Cell objCell = (Cell)obj;
+            return objCell.Row == this.Row && objCell.Column == this.Column && objCell.Value == this.Value;
+        }
+
         public abstract int Value
         {
             get; set;
