@@ -22,9 +22,9 @@ namespace Sudoku
 
         private void checkValue(int row, int column, int value)
         {
-            checkRow(int row, int column, int value);
-            checkColumn(int row, int column, int value);
-
+            checkRow(row, column, value);
+            checkColumn(row, column, value);
+            checkSquare(row, column, value);
         }
 
         private void checkIdentity(int firtsValue, int secondValue, String unit)
