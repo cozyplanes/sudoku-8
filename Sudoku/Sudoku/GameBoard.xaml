@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Sudoku"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="450"
+      d:DesignHeight="450" d:DesignWidth="550"
       Title="Board"
       FontSize="20">
 
@@ -33,12 +33,12 @@
             <ColumnDefinition Width="50" />
             <ColumnDefinition Width="100" />
         </Grid.ColumnDefinitions>
-        <Popup Grid.Column="9" Grid.Row="3" PopupAnimation="Fade" AllowsTransparency="False">
+        <Popup Name="win" Grid.Row="3" Grid.Column="9" PopupAnimation="Fade" AllowsTransparency="False" IsOpen="False">
             <StackPanel>
                 <TextBlock Name="McTextBlock" Background="Black" Foreground="White" >
                     Congratulations, you win!
                 </TextBlock>
-                <Button Content="OK" Click="Button_Click_1"/>
+                <Button Content="OK" Click="Button_Click"/>
             </StackPanel>
         </Popup>
         <ComboBox Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="5,5,2,2" Name="c00">
