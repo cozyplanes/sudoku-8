@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -38,6 +37,7 @@ namespace Sudoku
                         comboBox.Foreground = Brushes.Green;
                         comboBox.SelectedItem = comboBox.Items.GetItemAt(cell.Value - 1);
                         comboBox.IsEnabled = false;
+                        
                     }
                 }
             }
@@ -65,15 +65,16 @@ namespace Sudoku
                 Console.Out.WriteLine(ex.Message);
                 comboBox.Foreground = Brushes.Red;
             }
-            if (!board.ifFilled())
-            {
-                win.IsOpen = true;
-            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            win.IsOpen = false;
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

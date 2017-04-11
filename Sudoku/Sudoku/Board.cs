@@ -9,7 +9,8 @@ namespace Sudoku
         public Board()
         {
             initializeBoard();
-            setInitialCells();
+            fillBoard();
+            int i = 0;
         }
 
         public List<Cell> this[int index]
@@ -28,8 +29,61 @@ namespace Sudoku
                     cells[i].Add(new MutableCell(i, j, 0));
                 }
             }
-
         }
+        private void fillBoard()
+        {
+            generateRow(0);
+            generateRows(1,2);
+            generateRow(3);
+            generateRows(4, 5);
+            generateRow(6);
+            generateRows(7, 8);
+        }
+
+        private void generateRow(int n)
+        {
+            Random random = new Random();
+            List<int> list = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            int listIndex;
+            int listLength = list.Count;
+            int i = 0;
+            while(i < listLength)
+            {
+                listIndex = random.Next(0, list.Count);
+                if(n == 0)
+                {
+                    cells[n][i] = new MutableCell(0, i, list[listIndex]);
+                    list.RemoveAt(listIndex);
+                    i++;
+                }
+                else
+                {
+                    try
+                    {
+                        checkColumn(n,i,list[listIndex]);
+                        cells[n][i] = new MutableCell(0, i, list[listIndex]);
+                        list.RemoveAt(listIndex);
+                        i++;
+                    }catch(Exception)
+                    {
+                        continue;
+                    }
+                }  
+            }
+        }
+
+        private void generateRows(int row1, int row2)
+        {
+            for (int i = 0; i < 9; i++)
+            {
+                cells[row1][i] = cells[row1-1][(i + 6) % 9];
+            }
+            for (int i = 0; i < 9; i++)
+            {
+                cells[row2][i] = cells[row2-1][(i + 6) % 9];
+            }
+        }
+
 
         private void setInitialCells()
         {
