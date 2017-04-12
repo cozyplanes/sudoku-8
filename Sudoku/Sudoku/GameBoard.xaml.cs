@@ -19,13 +19,19 @@ namespace Sudoku
     {
 
         private Board board;
+        private string difficulty;
 
-        public GameBoard()
+        public GameBoard(String difficulty)
         {
-            board = new Board();
             InitializeComponent();
+            SetBoard(difficulty);
+        }
 
-            for(int i = 0; i < 9; i++)
+        private void SetBoard(String difficulty)
+        {
+            this.difficulty = difficulty;
+            board = new Board(difficulty);
+            for (int i = 0; i < 9; i++)
             {
                 List<Cell> row = board[i];
                 for (int j = 0; j < 9; j++)
@@ -33,11 +39,10 @@ namespace Sudoku
                     Cell cell = row[j];
                     if (cell.Value != 0)
                     {
-                        ComboBox comboBox = (ComboBox) LogicalTreeHelper.FindLogicalNode(GameGrid, String.Format("c{0}{1}", i, j));
+                        ComboBox comboBox = (ComboBox)LogicalTreeHelper.FindLogicalNode(GameGrid, String.Format("c{0}{1}", i, j));
                         comboBox.Foreground = Brushes.Green;
                         comboBox.SelectedItem = comboBox.Items.GetItemAt(cell.Value - 1);
                         comboBox.IsEnabled = false;
-                        
                     }
                 }
             }
@@ -78,7 +83,7 @@ namespace Sudoku
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            NavigationService.Refresh();
+            NavigationService.Navigate(new GameBoard(difficulty));
         }
     }
 }

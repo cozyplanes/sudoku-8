@@ -5,14 +5,17 @@ namespace Sudoku
 {
     public class Board
     {
-        List<List<Cell>> cells = new List<List<Cell>>(9);
-        public Board()
+        private List<List<Cell>> cells = new List<List<Cell>>(9);
+        private static Dictionary<string, int> difficulties = new Dictionary<string, int> {
+            { "easy", 45 }, { "medium", 36 }, { "hard", 27 } };
+
+        public Board(String difficulty)
         {
             initializeBoard();
             fillBoard();
             int counter = 0;
             Random rand = new Random();
-            while (counter < 45)
+            while (counter < 81 - difficulties[difficulty])
             {
                 int row = rand.Next(0, 9);
                 int column = rand.Next(0, 9);
