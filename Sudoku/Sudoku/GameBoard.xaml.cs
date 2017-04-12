@@ -65,6 +65,10 @@ namespace Sudoku
                 Console.Out.WriteLine(ex.Message);
                 comboBox.Foreground = Brushes.Red;
             }
+            if (board.ifFilled())
+            {
+                win.IsOpen = true;
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

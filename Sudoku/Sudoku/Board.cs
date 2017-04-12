@@ -10,7 +10,18 @@ namespace Sudoku
         {
             initializeBoard();
             fillBoard();
-            int i = 0;
+            int counter = 0;
+            Random rand = new Random();
+            while (counter < 1)
+            {
+                int row = rand.Next(0, 9);
+                int column = rand.Next(0, 9);
+                if (cells[row][column] is ImmutableCell)
+                {
+                    cells[row][column] = new MutableCell(row, column, 0);
+                    counter++;
+                }
+            }
         }
 
         public List<Cell> this[int index]
@@ -32,43 +43,35 @@ namespace Sudoku
         }
         private void fillBoard()
         {
-            generateRow(0);
-            generateRows(1,2);
-            generateRow(3);
-            generateRows(4, 5);
-            generateRow(6);
-            generateRows(7, 8);
+            for (int i = 0; i < 9; i+=3)
+            {
+                generateRow(i);
+                generateRows(i + 1, i + 2);
+            }
+        }
+
+        private static List<int> GetValues()
+        {
+            return new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 }; 
         }
 
         private void generateRow(int n)
         {
             Random random = new Random();
-            List<int> list = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            List<int> list = GetValues();
             int listIndex;
-            int listLength = list.Count;
-            int i = 0;
-            while(i < listLength)
+            for (int i = 0; i < 9; i++)
             {
-                listIndex = random.Next(0, list.Count);
                 if(n == 0)
                 {
-                    cells[n][i] = new MutableCell(0, i, list[listIndex]);
+                    listIndex = random.Next(0, list.Count);
+                    cells[n][i] = new ImmutableCell(0, i, list[listIndex]);
                     list.RemoveAt(listIndex);
-                    i++;
                 }
                 else
                 {
-                    try
-                    {
-                        checkColumn(n,i,list[listIndex]);
-                        cells[n][i] = new MutableCell(0, i, list[listIndex]);
-                        list.RemoveAt(listIndex);
-                        i++;
-                    }catch(Exception)
-                    {
-                        continue;
-                    }
-                }  
+                    cells[n][i] = new ImmutableCell(n, i, cells[n - 3][(i + 1) % 9].Value);
+                }
             }
         }
 
@@ -76,59 +79,12 @@ namespace Sudoku
         {
             for (int i = 0; i < 9; i++)
             {
-                cells[row1][i] = cells[row1-1][(i + 6) % 9];
+                cells[row1][i] = cells[row1-1][(i + 3) % 9];
             }
             for (int i = 0; i < 9; i++)
             {
-                cells[row2][i] = cells[row2-1][(i + 6) % 9];
+                cells[row2][i] = cells[row2-1][(i + 3) % 9];
             }
-        }
-
-
-        private void setInitialCells()
-        {
-            Random rand = new Random();
-            int i = 0;
-            List<Cell> unallowedCells = new List<Cell>();
-            int c = 0;
-            while (i < 36)
-            {
-                c++;
-                bool flag = false;
-                int row = rand.Next(0, 9);
-                int column = rand.Next(0, 9);
-                int value = rand.Next(1, 10);
-                Cell cell = new ImmutableCell(row, column, value);
-                foreach (Cell unallowedCell in unallowedCells)
-                {
-                    if (cell.Equals(unallowedCell))
-                    {
-                        flag = true;
-                        break;
-                    }
-                }
-                if(flag)
-                {
-                    continue;
-                }
-                try
-                {
-                    checkValue(row, column, value);
-                    if (cells[row][column].Value == 0 && checkAmount(row, column))
-                    {
-                        cells[row][column] = cell;
-                        i++;
-                    }
-                }
-                catch (Exception)
-                {
-                    unallowedCells.Add(cell);
-                    continue;
-                }
-                
-            }
-            Console.WriteLine(c);
-            Console.WriteLine(unallowedCells.Count);
         }
 
         public List<List<Cell>> Cells
