@@ -73,12 +73,12 @@ namespace Sudoku
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            win.IsOpen = false;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Refresh();
         }
     }
 }

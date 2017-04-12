@@ -9,7 +9,15 @@
       Title="Board"
       FontSize="20">
 
-    <Grid Name="GameGrid">
+    <StackPanel Height="500" Width="450">
+        <Popup Name="win" Height="50" Width="450" PopupAnimation="Fade" AllowsTransparency="False" IsOpen="False">
+            <StackPanel>
+                <TextBlock x:Name="McTextBlock" Background="Black" Foreground="White" ><Run Text="Congratulations, you win!"/></TextBlock>
+                <Button Content="OK" Click="Button_Click"/>
+            </StackPanel>
+        </Popup>
+        <Button Content="New Game" Click="Button_Click_1" Margin="0,0,-0.4,0" />
+        <Grid Name="GameGrid" Margin="0, 0, 0, 0">
         <Grid.RowDefinitions>
             <RowDefinition Height="50" />
             <RowDefinition Height="50" />
@@ -30,17 +38,8 @@
             <ColumnDefinition Width="50" />
             <ColumnDefinition Width="50" />
             <ColumnDefinition Width="50" />
-            <ColumnDefinition Width="50" />
-            <ColumnDefinition Width="100" />
-        </Grid.ColumnDefinitions>
-        <Popup Name="win" Grid.Row="3" Grid.Column="9" PopupAnimation="Fade" AllowsTransparency="False" IsOpen="False">
-            <StackPanel>
-                <TextBlock Name="McTextBlock" Background="Black" Foreground="White" >
-                    Congratulations, you win!
-                </TextBlock>
-                <Button Content="OK" Click="Button_Click"/>
-            </StackPanel>
-        </Popup>
+                <ColumnDefinition Width="50" />
+            </Grid.ColumnDefinitions>
         <ComboBox Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="2" Name="c00">
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice001">1</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice002">2</ComboBoxItem>
@@ -932,8 +931,9 @@
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice888">8</ComboBoxItem>
             <ComboBoxItem PreviewMouseLeftButtonDown="choice_PreviewMouseLeftButtonDown" Name="choice889">9</ComboBoxItem>
         </ComboBox>
-        
 
 
-    </Grid>
+
+        </Grid>
+    </StackPanel>
 </Page>

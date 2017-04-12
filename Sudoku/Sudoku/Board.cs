@@ -12,7 +12,7 @@ namespace Sudoku
             fillBoard();
             int counter = 0;
             Random rand = new Random();
-            while (counter < 1)
+            while (counter < 45)
             {
                 int row = rand.Next(0, 9);
                 int column = rand.Next(0, 9);

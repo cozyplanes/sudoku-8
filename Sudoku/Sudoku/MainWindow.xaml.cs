@@ -1,21 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Sudoku
 {
-    public partial class MainWindow : Page
+    public partial class MainWindow : Window
     {
         public MainWindow()
         {
@@ -25,7 +13,10 @@ namespace Sudoku
         private void play_Click(object sender, RoutedEventArgs e)
         {
             Uri uri = new Uri("GameBoard.xaml", UriKind.Relative);
-            this.NavigationService.Navigate(uri);
+            MainFrame.NavigationService.Navigate(uri);
+            play.Visibility = Visibility.Hidden;
+            quit.Visibility = Visibility.Hidden;
+
         }
 
         private void quit_Click(object sender, RoutedEventArgs e)
