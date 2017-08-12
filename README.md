@@ -1,2 +1,2 @@
 # sudoku
-Sudoku game imlementation (.Net, WPF)
+Sudoku game implementation (.Net, WPF)
